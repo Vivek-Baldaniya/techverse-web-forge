@@ -20,13 +20,13 @@ const About = () => {
     {
       name: "Vivek Sorathiya",
       role: "CEO & Founder",
-      image: "/images/vivek.jpeg",
+      image: `${import.meta.env.BASE_URL}images/vivek.jpeg`,
       bio: "",
     },
     {
       name: "Yuvraj Sorathiya",
       role: "CEO & Co-Founder",
-      image: "/images/yuvraj.jpeg",
+      image: `${import.meta.env.BASE_URL}images/yuvraj.jpeg`,
       bio: "",
     },
   ];
@@ -171,27 +171,26 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {team.map((member, index) => (
               <Card
                 key={index}
-                className="text-center overflow-hidden hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm"
+                className="text-center overflow-hidden hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm h-[500px] flex flex-col"
               >
-                <div className="aspect-square overflow-hidden">
+                <div className="h-[360px] overflow-hidden flex-shrink-0">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <CardContent className="p-6">
+                <CardContent className="p-6 flex-1 flex flex-col justify-center">
                   <h3 className="text-xl font-semibold text-gray-900 mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-blue-600 font-medium mb-3">
+                  <p className="text-blue-600 font-medium">
                     {member.role}
                   </p>
-                  <p className="text-gray-600 text-sm">{member.bio}</p>
                 </CardContent>
               </Card>
             ))}
