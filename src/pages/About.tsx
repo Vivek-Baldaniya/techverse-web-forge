@@ -1,74 +1,65 @@
-
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
-import { 
-  Target, 
-  Eye, 
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import {
+  Target,
+  Eye,
   Heart,
   Award,
   Lightbulb,
   Shield,
   Clock,
-  CheckCircle
-} from 'lucide-react';
-import { HeroSection } from '@/components/HeroSection';
-import { StatsGrid } from '@/components/StatsGrid';
-import { FeatureCard } from '@/components/FeatureCard';
+  CheckCircle,
+} from "lucide-react";
+import { HeroSection } from "@/components/HeroSection";
+import { StatsGrid } from "@/components/StatsGrid";
+import { FeatureCard } from "@/components/FeatureCard";
 
 const About = () => {
   const team = [
     {
-      name: "Alex Johnson",
+      name: "Vivek Sorathiya",
       role: "CEO & Founder",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
-      bio: "10+ years in tech leadership, passionate about innovation"
+      image: "/images/vivek.jpeg",
+      bio: "",
     },
     {
-      name: "Sarah Chen",
-      role: "CTO",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b66eedd2?w=300&h=300&fit=crop&crop=face",
-      bio: "Full-stack developer with expertise in AI and cloud architecture"
+      name: "Yuvraj Sorathiya",
+      role: "CEO & Co-Founder",
+      image: "/images/yuvraj.jpeg",
+      bio: "",
     },
-    {
-      name: "Mike Rodriguez",
-      role: "Lead Designer",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
-      bio: "Award-winning designer specializing in user experience"
-    },
-    {
-      name: "Emily Davis",
-      role: "Project Manager",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face",
-      bio: "Agile expert ensuring projects deliver on time and budget"
-    }
   ];
 
   const values = [
     {
       icon: Lightbulb,
       title: "Innovation First",
-      description: "We constantly explore new technologies and methodologies to deliver cutting-edge solutions.",
-      color: "from-yellow-100 to-orange-100"
+      description:
+        "We constantly explore new technologies and methodologies to deliver cutting-edge solutions.",
+      color: "from-yellow-100 to-orange-100",
     },
     {
       icon: Shield,
       title: "Security & Quality",
-      description: "Every solution we build follows industry best practices for security and code quality.",
-      color: "from-green-100 to-emerald-100"
+      description:
+        "Every solution we build follows industry best practices for security and code quality.",
+      color: "from-green-100 to-emerald-100",
     },
     {
       icon: Clock,
       title: "Timely Delivery",
-      description: "We respect deadlines and ensure all projects are completed on schedule.",
-      color: "from-blue-100 to-cyan-100"
+      description:
+        "We respect deadlines and ensure all projects are completed on schedule.",
+      color: "from-blue-100 to-cyan-100",
     },
     {
       icon: Heart,
       title: "Client Success",
-      description: "Your success is our success. We're committed to delivering results that exceed expectations.",
-      color: "from-pink-100 to-rose-100"
-    }
+      description:
+        "Your success is our success. We're committed to delivering results that exceed expectations.",
+      color: "from-pink-100 to-rose-100",
+    },
   ];
 
   const achievements = [
@@ -77,20 +68,20 @@ const About = () => {
     "24/7 Support & Maintenance",
     "ISO 27001 Security Certified",
     "Agile Development Methodology",
-    "5+ Years Industry Experience"
+    "5+ Years Industry Experience",
   ];
 
   const stats = [
     { value: "50+", label: "Projects" },
     { value: "30+", label: "Clients" },
     { value: "99%", label: "Satisfaction" },
-    { value: "24/7", label: "Support" }
+    { value: "24/7", label: "Support" },
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <HeroSection 
+      <HeroSection
         title="About"
         highlightText="Get Into Tech Verse"
         description="We're a team of passionate technologists dedicated to helping businesses thrive in the digital age through innovative solutions and exceptional service."
@@ -106,11 +97,14 @@ const About = () => {
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
                     <Target className="h-6 w-6 text-white" />
                   </div>
-                  <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
+                  <h2 className="text-3xl font-bold text-gray-900">
+                    Our Mission
+                  </h2>
                 </div>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  To empower businesses of all sizes with innovative technology solutions that drive growth, 
-                  improve efficiency, and create meaningful connections with their customers.
+                  To empower businesses of all sizes with innovative technology
+                  solutions that drive growth, improve efficiency, and create
+                  meaningful connections with their customers.
                 </p>
               </div>
 
@@ -119,11 +113,14 @@ const About = () => {
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
                     <Eye className="h-6 w-6 text-white" />
                   </div>
-                  <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
+                  <h2 className="text-3xl font-bold text-gray-900">
+                    Our Vision
+                  </h2>
                 </div>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  To be the leading technology partner that businesses trust to navigate the digital landscape 
-                  and achieve their goals through cutting-edge technology.
+                  To be the leading technology partner that businesses trust to
+                  navigate the digital landscape and achieve their goals through
+                  cutting-edge technology.
                 </p>
               </div>
             </div>
@@ -143,7 +140,8 @@ const About = () => {
               Our Core Values
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The principles that guide everything we do and shape our company culture
+              The principles that guide everything we do and shape our company
+              culture
             </p>
           </div>
 
@@ -173,19 +171,26 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {team.map((member, index) => (
-              <Card key={index} className="text-center overflow-hidden hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm">
+              <Card
+                key={index}
+                className="text-center overflow-hidden hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm"
+              >
                 <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={member.image} 
+                  <img
+                    src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-3">{member.role}</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="text-blue-600 font-medium mb-3">
+                    {member.role}
+                  </p>
                   <p className="text-gray-600 text-sm">{member.bio}</p>
                 </CardContent>
               </Card>
@@ -203,10 +208,11 @@ const About = () => {
                 Why Choose Get Into Tech Verse?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                We combine technical expertise with business acumen to deliver solutions that not only meet 
-                your immediate needs but also position you for future growth and success.
+                We combine technical expertise with business acumen to deliver
+                solutions that not only meet your immediate needs but also
+                position you for future growth and success.
               </p>
-              
+
               <div className="space-y-3">
                 {achievements.map((achievement, index) => (
                   <div key={index} className="flex items-center">
@@ -223,13 +229,19 @@ const About = () => {
                   <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Award className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Trusted Partner</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    Trusted Partner
+                  </h3>
                 </div>
                 <p className="text-gray-600 text-center mb-6">
-                  We've helped businesses across industries achieve their digital transformation goals 
-                  with our comprehensive technology solutions.
+                  We've helped businesses across industries achieve their
+                  digital transformation goals with our comprehensive technology
+                  solutions.
                 </p>
-                <Button asChild className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                <Button
+                  asChild
+                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                >
                   <Link to="/contact">Start Your Project</Link>
                 </Button>
               </Card>
@@ -246,13 +258,24 @@ const About = () => {
             Ready to Work Together?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss your project and discover how we can help bring your vision to life.
+            Let's discuss your project and discover how we can help bring your
+            vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+            <Button
+              asChild
+              size="lg"
+              variant="secondary"
+              className="bg-white text-blue-600 hover:bg-gray-100"
+            >
               <Link to="/contact">Get in Touch</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-blue-600">
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="text-blue-600 border-white hover:bg-white hover:text-blue-600"
+            >
               <Link to="/projects">View Our Work</Link>
             </Button>
           </div>

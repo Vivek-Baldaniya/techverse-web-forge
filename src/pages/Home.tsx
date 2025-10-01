@@ -1,14 +1,13 @@
-
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { 
-  ArrowRight, 
-  CheckCircle, 
-  Code, 
-  Smartphone, 
-  Globe, 
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  ArrowRight,
+  CheckCircle,
+  Code,
+  Smartphone,
+  Globe,
   Zap,
   Users,
   Trophy,
@@ -18,9 +17,9 @@ import {
   Sparkles,
   Cpu,
   Database,
-  Shield
-} from 'lucide-react';
-import LogoSlider from '@/components/LogoSlider';
+  Shield,
+} from "lucide-react";
+import LogoSlider from "@/components/LogoSlider";
 
 const Home = () => {
   const [currentProject, setCurrentProject] = useState(0);
@@ -29,34 +28,38 @@ const Home = () => {
     {
       title: "E-commerce Platform",
       description: "Modern online store with AI-powered recommendations",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
-      tech: "React, Node.js, AI/ML"
+      image:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
+      tech: "React, Node.js, AI/ML",
     },
     {
-      title: "Healthcare Management System", 
+      title: "Healthcare Management System",
       description: "Complete patient management with telemedicine features",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop&crop=center",
-      tech: "Next.js, PostgreSQL, WebRTC"
+      image:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop&crop=center",
+      tech: "Next.js, PostgreSQL, WebRTC",
     },
     {
       title: "FinTech Mobile App",
       description: "Secure banking app with biometric authentication",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center",
-      tech: "React Native, Blockchain, AI"
+      image:
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center",
+      tech: "React Native, Blockchain, AI",
     },
     {
       title: "AI Analytics Dashboard",
       description: "Real-time business intelligence and predictive analytics",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center",
-      tech: "Python, TensorFlow, React"
-    }
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center",
+      tech: "Python, TensorFlow, React",
+    },
   ];
 
   const stats = [
     { number: "50+", label: "Projects Completed", icon: Trophy },
     { number: "30+", label: "Happy Clients", icon: Users },
     { number: "5+", label: "Years Experience", icon: Star },
-    { number: "24/7", label: "Support Available", icon: Zap }
+    { number: "24/7", label: "Support Available", icon: Zap },
   ];
 
   useEffect(() => {
@@ -85,65 +88,97 @@ const Home = () => {
           <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-green-200 rounded-full opacity-50"></div>
           <div className="absolute bottom-40 right-1/3 w-8 h-8 bg-orange-200 rounded-full opacity-60"></div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                Transform Your Business with 
+                Transform Your Business with
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block">
                   Cutting-Edge Technology
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                We help startups and enterprises build innovative digital solutions that drive growth, 
-                enhance efficiency, and create exceptional user experiences.
+                We help startups and enterprises build innovative digital
+                solutions that drive growth, enhance efficiency, and create
+                exceptional user experiences.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
+                >
                   <Link to="/contact" className="flex items-center">
                     Start Your Project <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-gray-300 text-gray-700 hover:bg-gray-50">
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="border-gray-300 text-gray-700 hover:bg-gray-50"
+                >
                   <Link to="/projects">View Our Work</Link>
                 </Button>
               </div>
             </div>
-            
+
             {/* Visual Elements Instead of Image */}
             <div className="relative">
               <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8 shadow-2xl">
                 {/* Tech Icons Grid */}
                 <div className="grid grid-cols-3 gap-6 mb-6">
-                  <div className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in" style={{ animationDelay: '0.1s' }}>
+                  <div
+                    className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in"
+                    style={{ animationDelay: "0.1s" }}
+                  >
                     <Code className="h-8 w-8 text-blue-600 mx-auto" />
                   </div>
-                  <div className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                  <div
+                    className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in"
+                    style={{ animationDelay: "0.2s" }}
+                  >
                     <Smartphone className="h-8 w-8 text-green-600 mx-auto" />
                   </div>
-                  <div className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in" style={{ animationDelay: '0.3s' }}>
+                  <div
+                    className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in"
+                    style={{ animationDelay: "0.3s" }}
+                  >
                     <Database className="h-8 w-8 text-purple-600 mx-auto" />
                   </div>
-                  <div className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in" style={{ animationDelay: '0.4s' }}>
+                  <div
+                    className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in"
+                    style={{ animationDelay: "0.4s" }}
+                  >
                     <Globe className="h-8 w-8 text-orange-600 mx-auto" />
                   </div>
-                  <div className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in" style={{ animationDelay: '0.5s' }}>
+                  <div
+                    className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in"
+                    style={{ animationDelay: "0.5s" }}
+                  >
                     <Cpu className="h-8 w-8 text-red-600 mx-auto" />
                   </div>
-                  <div className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in" style={{ animationDelay: '0.6s' }}>
+                  <div
+                    className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fade-in"
+                    style={{ animationDelay: "0.6s" }}
+                  >
                     <Shield className="h-8 w-8 text-indigo-600 mx-auto" />
                   </div>
                 </div>
-                
+
                 {/* Central Element */}
                 <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-xl text-center">
                   <Sparkles className="h-12 w-12 mx-auto mb-3" />
-                  <h3 className="text-lg font-semibold mb-2">Innovation Powered</h3>
-                  <p className="text-sm opacity-90">Building Tomorrow's Solutions Today</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    Innovation Powered
+                  </h3>
+                  <p className="text-sm opacity-90">
+                    Building Tomorrow's Solutions Today
+                  </p>
                 </div>
               </div>
-              
+
               {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 bg-yellow-400 text-yellow-900 p-3 rounded-full shadow-lg animate-bounce">
                 <Zap className="h-6 w-6" />
@@ -161,11 +196,17 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div
+                key={index}
+                className="text-center animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full mb-4">
                   <stat.icon className="h-8 w-8 text-blue-600" />
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
+                <div className="text-3xl font-bold text-gray-900 mb-2">
+                  {stat.number}
+                </div>
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -184,7 +225,8 @@ const Home = () => {
               Recent Projects
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover how we've helped businesses transform their operations through innovative technology solutions
+              Discover how we've helped businesses transform their operations
+              through innovative technology solutions
             </p>
           </div>
 
@@ -192,8 +234,8 @@ const Home = () => {
             <Card className="overflow-hidden shadow-xl">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative h-80 lg:h-96 overflow-hidden">
-                  <img 
-                    src={projects[currentProject].image} 
+                  <img
+                    src={projects[currentProject].image}
                     alt={projects[currentProject].title}
                     className="w-full h-full object-cover transition-all duration-500"
                   />
@@ -211,7 +253,10 @@ const Home = () => {
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     {projects[currentProject].description}
                   </p>
-                  <Button asChild className="self-start bg-blue-600 hover:bg-blue-700 text-white">
+                  <Button
+                    asChild
+                    className="self-start bg-blue-600 hover:bg-blue-700 text-white"
+                  >
                     <Link to="/projects">View All Projects</Link>
                   </Button>
                 </CardContent>
@@ -219,13 +264,13 @@ const Home = () => {
             </Card>
 
             {/* Navigation Buttons */}
-            <button 
+            <button
               onClick={prevProject}
               className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all"
             >
               <ChevronLeft className="h-6 w-6 text-gray-700" />
             </button>
-            <button 
+            <button
               onClick={nextProject}
               className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all"
             >
@@ -239,9 +284,9 @@ const Home = () => {
                   key={index}
                   onClick={() => setCurrentProject(index)}
                   className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentProject 
-                      ? 'bg-gradient-to-r from-blue-600 to-purple-600' 
-                      : 'bg-gray-300'
+                    index === currentProject
+                      ? "bg-gradient-to-r from-blue-600 to-purple-600"
+                      : "bg-gray-300"
                   }`}
                 />
               ))}
@@ -264,23 +309,49 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Code, title: "Web Development", desc: "Custom websites and web applications" },
-              { icon: Smartphone, title: "Mobile Apps", desc: "iOS and Android app development" },
-              { icon: Globe, title: "Digital Marketing", desc: "SEO, social media, and online campaigns" },
-              { icon: Zap, title: "AI Automation", desc: "Intelligent business process automation" }
+              {
+                icon: Code,
+                title: "Web Development",
+                desc: "Custom websites and web applications",
+              },
+              {
+                icon: Smartphone,
+                title: "Mobile Apps",
+                desc: "iOS and Android app development",
+              },
+              {
+                icon: Globe,
+                title: "Digital Marketing",
+                desc: "SEO, social media, and online campaigns",
+              },
+              {
+                icon: Zap,
+                title: "AI Automation",
+                desc: "Intelligent business process automation",
+              },
             ].map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow p-6 text-center group">
+              <Card
+                key={index}
+                className="hover:shadow-lg transition-shadow p-6 text-center group"
+              >
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full mb-4 group-hover:from-blue-600 group-hover:to-purple-600 transition-all">
                   <service.icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  {service.title}
+                </h3>
                 <p className="text-gray-600">{service.desc}</p>
               </Card>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <Button asChild size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50">
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-gray-300 text-gray-700 hover:bg-gray-50"
+            >
               <Link to="/services">View All Services</Link>
             </Button>
           </div>
@@ -294,15 +365,26 @@ const Home = () => {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss how our technology solutions can help you achieve your goals and stay ahead of the competition.
+            Let's discuss how our technology solutions can help you achieve your
+            goals and stay ahead of the competition.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+            <Button
+              asChild
+              size="lg"
+              variant="secondary"
+              className="bg-white text-blue-600 hover:bg-gray-100"
+            >
               <Link to="/contact" className="flex items-center">
                 Get Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-blue-600">
+            <Button
+              asChild
+              size="lg"
+              variant="secondary"
+              className="text-blue-600 border-white hover:bg-gray-100 hover:text-blue-600"
+            >
               <Link to="/projects">View Portfolio</Link>
             </Button>
           </div>
